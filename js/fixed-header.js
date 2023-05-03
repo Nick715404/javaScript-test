@@ -1,6 +1,7 @@
 'use strict'
 
 const header = document.querySelector('.header');
+const btnUp = document.querySelector('.up-btn');
 const firstBlock = document.querySelector('.section-1');
 const firstBlockHeight = firstBlock.offsetHeight;
 
@@ -13,8 +14,10 @@ function headerScrollHandler() {
 
     if (scrollTop >= firstBlockHeight) {
         header.classList.add('header--fixed');
+        btnUp.classList.add('up-btn--fixed');
     } else {
         header.classList.remove('header--fixed');
+        btnUp.classList.add('up-btn--fixed');
     }
     scrollStart = scrollTop;
 }
