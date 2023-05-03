@@ -17,7 +17,7 @@ function headerScrollHandler() {
         btnUp.classList.add('up-btn--fixed');
     } else {
         header.classList.remove('header--fixed');
-        btnUp.classList.add('up-btn--fixed');
+        btnUp.classList.remove('up-btn--fixed');
     }
     scrollStart = scrollTop;
 }
