@@ -1,0 +1,71 @@
+@import './fixed-header.css';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.page {
+    /* flex-grow: 1; */
+    background-color: rgb(53, 53, 53);
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial;
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.page__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-list {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    list-style: none;
+    font-size: 2.2rem;
+    flex-wrap: wrap;
+}
+
+.main-link {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color: rgb(29, 31, 34);
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: all .3s ease-out;
+}
+
+.main-link:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+}
