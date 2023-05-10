@@ -1,12 +1,12 @@
-.header {
+#headerScroll {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background: #181818;
 }
 
-.header h1 {
+#headerScroll h1 {
   text-align: center;
   animation: moove .9s infinite alternate ease-in-out;
   text-transform: uppercase;
@@ -88,7 +88,7 @@
   transform: rotate(0deg);
   transform-origin: center;
   opacity: 0;
-  transition: transform 3.2s ease, opacity 1.2s ease;
+  transition: transform 3.8s ease, opacity 1.2s ease;
 }
 
 .box-3--active {

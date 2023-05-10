@@ -1,6 +1,6 @@
 'use strict'
 
-const header = document.querySelector('.header');
+const header = document.querySelector('.header-first');
 const btnUp = document.querySelector('.up-btn');
 const firstBlock = document.querySelector('.section-1');
 const firstBlockHeight = firstBlock.offsetHeight;

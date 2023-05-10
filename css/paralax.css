@@ -1,0 +1,68 @@
+.wrap {
+    background-color: lightgrey;
+    height: 100vh;
+    max-height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+    perspective-origin: center top;
+    transform-style: preserve-3d;
+}
+
+.header-paralax {
+    width: 1408px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.header-paralax__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/p16-1.jpg);
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    transform-origin: center top;
+    transform: translateZ(-0.9px) translateX(-8px) scale(1.89);
+}
+
+.header-paralax__box {
+    position: absolute;
+    width: 64%;
+    padding: 0 110px;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.header-paralax__title {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 70px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    text-shadow: 2px 2px #000;
+}
+
+.header-paralax__text {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 25px;
+    text-shadow: 2px 2px #000;
+}
+
+.main-parallax {
+    background-color: rgb(25, 34, 116);
+    transform: translateZ(0);
+    width: 1400px;
+    height: 1200px;
+    margin: 0 auto;
+}

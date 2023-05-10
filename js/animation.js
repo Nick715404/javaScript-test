@@ -1,6 +1,10 @@
 'use strict'
 
-const screenHeight = document.documentElement.scrollHeight;
+const screenHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+);
 const listItems = document.querySelectorAll('.list__item');
 const firstBox = document.querySelector('.box-1');
 const secondBox = document.querySelector('.box-2');
@@ -19,6 +23,8 @@ function scrolling() {
 
   if (isFullyVisible(firstBox)) {
     firstBox.classList.add('box-1--active');
+  } else {
+    listItems.classList.remove('box-1--acrive')
   }
 
   if (isFullyVisible(secondBox)) {

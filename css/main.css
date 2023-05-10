@@ -1,6 +1,7 @@
 @import './fixed-header.css';
 @import './progress-bar.css';
 @import './animation.css';
+@import './paralax.css';
 
 *,
 *::after,
@@ -54,16 +55,26 @@ body {
     list-style: none;
     font-size: 2.2rem;
     flex-wrap: wrap;
+    max-width: 70%;
+}
+
+.main-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-link {
     display: inline-block;
     color: rgb(255, 255, 255);
     padding: 20px;
+    width: 40%;
     background-color: rgb(29, 31, 34);
     border: 1px solid white;
     border-radius: 50px;
     transition: all .3s ease-out;
+    text-align: center;
 }
 
 .main-link:hover {
